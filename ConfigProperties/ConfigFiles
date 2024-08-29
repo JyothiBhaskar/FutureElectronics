@@ -1,0 +1,9 @@
+BrowserName=Chrome
+URL=https://uatuser:Welcome@123@p1.futureelectronics.com/
+HighElement=false
+sheetname=Register
+headless=false
+screenshotOnSuccess=true
+sheetname1=search
+sheetname2=Login
+region=Asia Apac
