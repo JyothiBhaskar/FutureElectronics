@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[Log Info: Setting upthe Browser]]>
@@ -10,22 +10,13 @@
     <line>
       <![CDATA[Browser closed]]>
     </line>
-    <line>
-      <![CDATA[Log Info: Setting upthe Browser]]>
-    </line>
-    <line>
-      <![CDATA[Log Info : Browser is up and running]]>
-    </line>
-    <line>
-      <![CDATA[Browser closed]]>
-    </line>
   </reporter-output>
-  <suite started-at="2024-08-28T20:23:24 IST" name="Suite" finished-at="2024-08-28T20:24:03 IST" duration-ms="38827">
+  <suite started-at="2024-09-05T15:10:12 IST" name="Default suite" finished-at="2024-09-05T15:11:25 IST" duration-ms="73092">
     <groups>
     </groups>
-    <test started-at="2024-08-28T20:23:24 IST" name="SmokeTest" finished-at="2024-08-28T20:24:03 IST" duration-ms="38827">
-      <class name="com.testpackage.Homepage">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.testpackage.Homepage@65a15628]" started-at="2024-08-28T20:23:24 IST" name="setup" finished-at="2024-08-28T20:23:32 IST" duration-ms="8078" status="PASS">
+    <test started-at="2024-09-05T15:10:12 IST" name="Default test" finished-at="2024-09-05T15:11:25 IST" duration-ms="73092">
+      <class name="com.testpackage.Login">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.testpackage.Login@470734c3]" started-at="2024-09-05T15:10:12 IST" name="setup" finished-at="2024-09-05T15:11:07 IST" duration-ms="54589" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Log Info: Setting upthe Browser]]>
@@ -35,161 +26,51 @@
             </line>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="RegionTest(java.lang.String)[pri:1, instance:com.testpackage.Homepage@65a15628]" started-at="2024-08-28T20:23:34 IST" name="RegionTest" data-provider="Search" finished-at="2024-08-28T20:23:38 IST" duration-ms="4396" status="FAIL">
+        <test-method signature="Registration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.testpackage.Login@470734c3]" started-at="2024-09-05T15:11:08 IST" name="Registration" data-provider="TestingData" finished-at="2024-09-05T15:11:25 IST" duration-ms="16351" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[diode]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element <a id="CybotCookiebotDialogBodyButtonAccept" class="CybotCookiebotDialogBodyButton" href="#" tabindex="0" lang="en" style="margin-left: 2px; padding-left: 12px; padding-right: 12px;">...</a> is not clickable at point (70, 17). Other element would receive the click: <button class="select-label dropdown-toggle" type="button" data-toggle="dropdown">...</button>
-  (Session info: chrome=127.0.6533.100)
-Build info: version: '4.11.0', revision: '040bc5406b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7ccff8bce308260ee72acc34ea495267, clickElement {id=f.CBC033C895E6EF8297BEB154E45B4221.d.4AB255E0EBE10613110B1A3609A502E6.e.105}]
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54883}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54883/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (7ccff8bce308260ee72acc34ea495267)] -> xpath: //a[@id="CybotCookiebotDialogBodyButtonAccept"]]
-Session ID: 7ccff8bce308260ee72acc34ea495267]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a id="CybotCookiebotDialogBodyButtonAccept" class="CybotCookiebotDialogBodyButton" href="#" tabindex="0" lang="en" style="margin-left: 2px; padding-left: 12px; padding-right: 12px;">...</a> is not clickable at point (70, 17). Other element would receive the click: <button class="select-label dropdown-toggle" type="button" data-toggle="dropdown">...</button>
-  (Session info: chrome=127.0.6533.100)
-Build info: version: '4.11.0', revision: '040bc5406b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7ccff8bce308260ee72acc34ea495267, clickElement {id=f.CBC033C895E6EF8297BEB154E45B4221.d.4AB255E0EBE10613110B1A3609A502E6.e.105}]
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54883}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54883/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (7ccff8bce308260ee72acc34ea495267)] -> xpath: //a[@id="CybotCookiebotDialogBodyButtonAccept"]]
-Session ID: 7ccff8bce308260ee72acc34ea495267
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-at com.pages.HomeTest.FELogodispaly(HomeTest.java:51)
-at com.testpackage.Homepage.RegionTest(Homepage.java:20)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- RegionTest -->
-        <test-method signature="Login(java.lang.String,java.lang.String)[pri:2, instance:com.testpackage.Homepage@65a15628]" started-at="2024-08-28T20:23:38 IST" name="Login" data-provider="logindata" finished-at="2024-08-28T20:23:47 IST" duration-ms="8457" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[jyothi.reddy+2008@borngroup.com]]>
+                <![CDATA[Jyothi]]>
               </value>
             </param>
             <param index="1">
+              <value>
+                <![CDATA[Reddy]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[jyothi.reddy+2008apac@borngroup.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Jyothi@12]]>
+              </value>
+            </param>
+            <param index="4">
               <value>
                 <![CDATA[Jyothi@12]]>
               </value>
             </param>
           </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testpackage.Homepage@65a15628]" started-at="2024-08-28T20:23:48 IST" name="tearDown" finished-at="2024-08-28T20:23:48 IST" duration-ms="393" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Browser closed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.testpackage.Homepage -->
-      <class name="com.testpackage.PLPTestPage">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.testpackage.PLPTestPage@72437d8d]" started-at="2024-08-28T20:23:48 IST" name="setup" finished-at="2024-08-28T20:23:58 IST" duration-ms="10026" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Log Info: Setting upthe Browser]]>
-            </line>
-            <line>
-              <![CDATA[Log Info : Browser is up and running]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="PLP()[pri:0, instance:com.testpackage.PLPTestPage@72437d8d]" started-at="2024-08-28T20:23:58 IST" name="PLP" finished-at="2024-08-28T20:24:03 IST" duration-ms="4339" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+          <exception class="java.lang.IllegalArgumentException">
             <message>
-              <![CDATA[element click intercepted: Element <a id="CybotCookiebotDialogBodyButtonAccept" class="CybotCookiebotDialogBodyButton" href="#" tabindex="0" lang="en" style="margin-left: 2px; padding-left: 12px; padding-right: 12px;">...</a> is not clickable at point (70, 17). Other element would receive the click: <button class="select-label dropdown-toggle" type="button" data-toggle="dropdown">...</button>
-  (Session info: chrome=127.0.6533.100)
-Build info: version: '4.11.0', revision: '040bc5406b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6b67970784a898cbd11eebbf0bdaf54d, clickElement {id=f.B41D652DC76CB74C8772B03C081AD818.d.EC5DA852C66656AB64E198F44AE1591A.e.49}]
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54944}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54944/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (6b67970784a898cbd11eebbf0bdaf54d)] -> xpath: //a[@id="CybotCookiebotDialogBodyButtonAccept"]]
-Session ID: 6b67970784a898cbd11eebbf0bdaf54d]]>
+              <![CDATA[Argument is of an illegal type: org.openqa.selenium.By$ByXPath]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a id="CybotCookiebotDialogBodyButtonAccept" class="CybotCookiebotDialogBodyButton" href="#" tabindex="0" lang="en" style="margin-left: 2px; padding-left: 12px; padding-right: 12px;">...</a> is not clickable at point (70, 17). Other element would receive the click: <button class="select-label dropdown-toggle" type="button" data-toggle="dropdown">...</button>
-  (Session info: chrome=127.0.6533.100)
-Build info: version: '4.11.0', revision: '040bc5406b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6b67970784a898cbd11eebbf0bdaf54d, clickElement {id=f.B41D652DC76CB74C8772B03C081AD818.d.EC5DA852C66656AB64E198F44AE1591A.e.49}]
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54944}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54944/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (6b67970784a898cbd11eebbf0bdaf54d)] -> xpath: //a[@id="CybotCookiebotDialogBodyButtonAccept"]]
-Session ID: 6b67970784a898cbd11eebbf0bdaf54d
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-at com.pages.HomeTest.FELogodispaly(HomeTest.java:51)
-at com.pages.PLPPages.Categories(PLPPages.java:29)
-at com.testpackage.PLPTestPage.PLP(PLPTestPage.java:17)
+              <![CDATA[java.lang.IllegalArgumentException: Argument is of an illegal type: org.openqa.selenium.By$ByXPath
+at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:82)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:461)
+at com.pages.Login_Page.registration(Login_Page.java:71)
+at com.testpackage.Login.Registration(Login.java:20)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -220,18 +101,18 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          </exception> <!-- java.lang.IllegalArgumentException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- PLP -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testpackage.PLPTestPage@72437d8d]" started-at="2024-08-28T20:24:03 IST" name="tearDown" finished-at="2024-08-28T20:24:03 IST" duration-ms="365" status="PASS">
+        </test-method> <!-- Registration -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testpackage.Login@470734c3]" started-at="2024-09-05T15:11:25 IST" name="tearDown" finished-at="2024-09-05T15:11:25 IST" duration-ms="474" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Browser closed]]>
             </line>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.testpackage.PLPTestPage -->
-    </test> <!-- SmokeTest -->
-  </suite> <!-- Suite -->
+      </class> <!-- com.testpackage.Login -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

@@ -29,7 +29,7 @@ public class Login_Page {
 	private By Registerbtn=By.xpath("//button[contains(text(),'Register')]");
 	private By Search=By.xpath("//input[@id=\"js-site-search-input\"]");
 	private By dashboard=By.xpath("//h1[normalize-space(text()=\"Dashboard\")]");
-	//private By checkbox=By.xpath("//input[@type='checkbox'][@id='terms_check']");
+	private By checkbox1=By.xpath("//input[@type='checkbox'][@id='terms_check']");
 	private By checkbox=By.cssSelector("#china-section-mobile > div.terms_check > label");
 	
 	
@@ -43,7 +43,10 @@ public class Login_Page {
 	public void registration(String Fname,String Lname, String mailid,String pwd,String Cpwd)
 	{
 		HelperClass.sleepMethod(2);
+		
 		driver.findElement(cookibot).click();
+		HelperClass.sleepMethod(2);
+
 		driver.findElement(loginmenu).click();
 		driver.findElement(Register).click();
 		//HelperClass.Expilictwait(driver,loginmenu).click();
@@ -63,9 +66,11 @@ public class Login_Page {
 
 		
 		HelperClass.sleepMethod(2);
-
+		
+		JavascriptExecutor exe=(JavascriptExecutor)driver;
+		exe.executeScript("arguments[0].click();", checkbox1);
 		//HelperClass.clickmethod(driver, driver.findElement(checkbox));
-		HelperClass.Expilictwait(driver, checkbox).click();
+		//HelperClass.Expilictwait(driver, checkbox).click();
 		HelperClass.sleepMethod(2);
 
 		HelperClass.Expilictwait(driver, Registerbtn).click();
