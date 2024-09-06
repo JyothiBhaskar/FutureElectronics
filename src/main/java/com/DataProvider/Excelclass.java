@@ -19,7 +19,7 @@ public class Excelclass {
 		
 		try 
 		{
-			wb = new XSSFWorkbook(new FileInputStream(new File("C:\\Users\\hp\\Desktop\\PreparationprojectData.xlsx")));
+			wb = new XSSFWorkbook(new FileInputStream(new File(System.getProperty("user.dir")+"\\TestData\\FutureElectronicsData.xlsx")));
 		} catch (FileNotFoundException e) 
 		{
 			

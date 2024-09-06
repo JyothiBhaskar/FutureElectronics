@@ -65,17 +65,9 @@ public class Login_Page {
 		System.out.println("is enabled checking"+ele.isEnabled());
 
 		
-		HelperClass.sleepMethod(2);
+		HelperClass.sleepMethod(3);
 		
-		JavascriptExecutor exe=(JavascriptExecutor)driver;
-		exe.executeScript("arguments[0].click();", checkbox1);
-		//HelperClass.clickmethod(driver, driver.findElement(checkbox));
-		//HelperClass.Expilictwait(driver, checkbox).click();
-		HelperClass.sleepMethod(2);
 
-		HelperClass.Expilictwait(driver, Registerbtn).click();
-		//driver.findElement(Registerbtn).click();
-				
 	}
 	
 	public boolean Dashboard()
@@ -83,7 +75,10 @@ public class Login_Page {
 	
 		HelperClass.sleepMethod(2);
 		boolean status=driver.findElement(dashboard).isDisplayed();
-		Reporter.log("Dashboard reported");
+		Reporter.log("Dashboard reported");		
 		return status;
+		
+		
+		
 }
 }

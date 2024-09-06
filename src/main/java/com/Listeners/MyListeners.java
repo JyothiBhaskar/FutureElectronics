@@ -28,7 +28,8 @@ public class MyListeners implements ITestListener {
 		{
 			test.pass("Test pass"+MediaEntityBuilder.createScreenCaptureFromBase64String(screenshot).build());
 		}
-		test.pass("Test Passed");
+		else {
+		test.pass("Test Passed");}
 		}
 	
 	

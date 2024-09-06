@@ -8,6 +8,7 @@
     <classes>
       <class name="com.testpackage.Homepage"/>
       <class name="com.testpackage.PLPTestPage"/>
+      <class name="com.testpackage.Login"/>
     </classes>
   </test> <!-- SmokeTest -->
 </suite> <!-- Suite -->
