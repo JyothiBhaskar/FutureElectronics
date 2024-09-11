@@ -4,11 +4,11 @@
 	<listeners>
 		<listener class-name="com.Listeners.MyListeners"></listener>
 	</listeners>
-  <test thread-count="5" name="SmokeTest">
+  <test thread-count="5" name="Test">
     <classes>
       <class name="com.testpackage.Homepage"/>
       <class name="com.testpackage.PLPTestPage"/>
       <class name="com.testpackage.Login"/>
-    </classes>
-  </test> <!-- SmokeTest -->
+    </classes>.
+  </test><!-- SmokeTest -->
 </suite> <!-- Suite -->

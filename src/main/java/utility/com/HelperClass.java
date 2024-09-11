@@ -1,6 +1,8 @@
 package utility.com;
 
+import java.text.SimpleDateFormat;
 import java.time.Duration;
+import java.util.Date;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -127,6 +129,14 @@ public class HelperClass {
 	}
 	
 	
+	
+	public static String getCurrentDate()
+	{
+		SimpleDateFormat myformat=new SimpleDateFormat("HH_mm_ss_dd_MM_yyyy");
+		
+		String newFormat=myformat.format(new Date());
+		return newFormat;
+	}
 	
 	}
 	

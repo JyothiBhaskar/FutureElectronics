@@ -21,15 +21,15 @@ public class MyListeners implements ITestListener {
 	public void onTestSuccess(ITestResult result)
 	{
 		
-		WebDriver driver=BrowserClass.getDriver();
-		String screenshot=HelperClass.TakeScreenshot(driver);
+		//WebDriver driver=BrowserClass.getDriver();
+		//String screenshot=HelperClass.TakeScreenshot(driver);
 		
 		if(ConfigClass.getproperties("screenshotOnSuccess").equalsIgnoreCase("true"))
 		{
-			test.pass("Test pass"+MediaEntityBuilder.createScreenCaptureFromBase64String(screenshot).build());
+			test.pass("Test pass ", MediaEntityBuilder.createScreenCaptureFromBase64String(HelperClass.TakeScreenshot(BrowserClass.getDriver())).build());
 		}
 		else {
-		test.pass("Test Passed");}
+		test.pass("Test Passed"+result.getTestName());}
 		}
 	
 	
