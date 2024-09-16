@@ -9,6 +9,7 @@
       <class name="com.testpackage.Homepage"/>
       <class name="com.testpackage.PLPTestPage"/>
       <class name="com.testpackage.Login"/>
+      <class name="com.testpackage.PDPTest"></class>
     </classes>.
   </test><!-- SmokeTest -->
 </suite> <!-- Suite -->

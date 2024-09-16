@@ -42,6 +42,17 @@ public class HelperClass {
 	 *
 	 */
 	
+	public static void cookiebutton(WebDriver driver,WebElement ele)
+	{
+		
+		if(ele.isDisplayed())
+		{
+			HelperClass.clickmethod(driver, ele);
+		
+		}
+			
+		}
+		
 	
 	
 	

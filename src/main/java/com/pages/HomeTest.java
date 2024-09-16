@@ -48,7 +48,8 @@ public class HomeTest {
 	{
 		HelperClass.sleepMethod(3);
 		//driver.findElement(cookibot).click();
-		HelperClass.clickmethod(driver, driver.findElement(cookibot)).click();
+		//HelperClass.clickmethod(driver, driver.findElement(cookibot)).click();
+		//HelperClass.cookiebutton(driver, driver.findElement(cookibot));
 		return driver.findElement(FELogo).isDisplayed();	
 		
 	}

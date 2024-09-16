@@ -21,12 +21,15 @@ public class PLPPages {
 	private By categorylink=By.xpath("//nav[3]//div//div//button//following-sibling::ul//span//a[@title='Products']");
 	private By L1Category= By.xpath("//nav[3]//following-sibling::a");
 	private By products=By.xpath("//a[@class='product__list--code']");
+	//tr[@class='list-row']//th[@class='product__list--item']//a[@class='product__list--code']
 	private By productlisttab=By.xpath("//a[contains(text(),'Product Listing')]");
 
 	public void Categories()
 	{
-		HomeTest test=new HomeTest(driver);
-		test.FELogodispaly();
+		//HomeTest test=new HomeTest(driver);
+		//test.FELogodispaly();
+		HelperClass.sleepMethod(3);
+
 		HelperClass.Expilictwait(driver, categorylink).click();
 		HelperClass.sleepMethod(2);
 		List<WebElement> lst=driver.findElements(L1Category);
@@ -49,19 +52,32 @@ public class PLPPages {
 	HelperClass.sleepMethod(2);
 	HelperClass.scrollTo(driver, products);
 	HelperClass.sleepMethod(2);
+	}
+	
+	public void produtclick()
+	{
 
+		HelperClass.sleepMethod(3);
+		
 	List<WebElement> lst1=driver.findElements(products);
 	for(int i=0;i<lst1.size();i++)
 	{
 
 		String value=lst1.get(i).getText();
 		System.out.println(value);
+		HelperClass.sleepMethod(3);
+
+		lst1.get(1).click();
+		break;
+		//HelperClass.sleepMethod(3);
+
 		
-		if(value.equalsIgnoreCase("CAP1126-1-AP-TR"))
-		{
-			lst1.get(i).click();
-			break;
-		}
+		//if(value.equalsIgnoreCase("MC34152DG"))
+		//{
+			//lst1.get(i).click();
+			//break;
+		//}
 	}
+	
 		
 	}}
