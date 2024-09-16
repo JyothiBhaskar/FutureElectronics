@@ -33,19 +33,13 @@ public class Login_Page {
 	private By checkbox=By.cssSelector("#china-section-mobile > div.terms_check > label");
 	
 	
-	public void cookiebot()
-	{
-		HelperClass.sleepMethod(2);
-		HelperClass.clickmethod(driver, driver.findElement(cookibot)).click();
-		
-	}
 	
 	public void registration(String Fname,String Lname, String mailid,String pwd,String Cpwd)
 	{
 		HelperClass.sleepMethod(2);
 		
-		driver.findElement(cookibot).click();
-		HelperClass.sleepMethod(2);
+		//driver.findElement(cookibot).click();
+		//HelperClass.sleepMethod(2);
 
 		driver.findElement(loginmenu).click();
 		driver.findElement(Register).click();

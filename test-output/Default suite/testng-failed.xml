@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.testpackage.Login">
+      <class name="com.testpackage.PDPTest">
         <methods>
+          <include name="PDP_Addtocart"/>
           <include name="tearDown"/>
-          <include name="Registration" invocation-numbers="0"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- com.testpackage.Login -->
+      </class> <!-- com.testpackage.PDPTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

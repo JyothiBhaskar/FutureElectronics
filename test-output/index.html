@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.testpackage.Login" class="method navigator-link" hash-for-method="Registration(Jyothi, Reddy, jyothi.reddy+2008apac@borngroup.com, Jyothi@12, Jyothi@12)">Registration(Jyothi, Reddy, jyothi.reddy+2008apac@borngroup.com, Jyothi@12, Jyothi@12)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -108,17 +122,17 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.testpackage.PDPTest" class="method navigator-link" hash-for-method="PDP_Addtocart">PDP_Addtocart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.testpackage.PLPTestPage" class="method navigator-link" hash-for-method="PLP">PLP</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.testpackage.Homepage" class="method navigator-link" hash-for-method="RegionTest(diode)">RegionTest(diode)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.testpackage.Login" class="method navigator-link" hash-for-method="Registration(Jyothi, Reddy, jyothi.reddy+2008apac@borngroup.com, Jyothi@12, Jyothi@12)">Registration(Jyothi, Reddy, jyothi.reddy+2008apac@borngroup.com, Jyothi@12, Jyothi@12)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -133,6 +147,47 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.testpackage.Login</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Registration(Jyothi, Reddy, jyothi.reddy+2008apac@borngroup.com, Jyothi@12, Jyothi@12)">
+                  </a> <!-- Registration(Jyothi, Reddy, jyothi.reddy+2008apac@borngroup.com, Jyothi@12, Jyothi@12) -->
+                  <span class="method-name">Registration</span>
+                  <span class="parameters">(Jyothi,Reddy,jyothi.reddy+2008apac@borngroup.com,Jyothi@12,Jyothi@12)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name=&apos;firstName&apos;]&quot;}
+  (Session info: chrome=128.0.6613.120)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [073ec3b583b512d66595e53dab1426b7, findElement {using=xpath, value=//input[@name=&apos;firstName&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 128.0.6613.120, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63531}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63531/devtoo..., se:cdpVersion: 128.0.6613.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 073ec3b583b512d66595e53dab1426b7
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at com.pages.Login_Page.registration(Login_Page.java:47)
+	at com.testpackage.Login.Registration(Login.java:20)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -175,15 +230,14 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.testpackage.Login</span>
+              <span class="class-name">com.testpackage.PDPTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Registration(Jyothi, Reddy, jyothi.reddy+2008apac@borngroup.com, Jyothi@12, Jyothi@12)">
-                  </a> <!-- Registration(Jyothi, Reddy, jyothi.reddy+2008apac@borngroup.com, Jyothi@12, Jyothi@12) -->
-                  <span class="method-name">Registration</span>
-                  <span class="parameters">(Jyothi,Reddy,jyothi.reddy+2008apac@borngroup.com,Jyothi@12,Jyothi@12)</span>
+                  <a name="PDP_Addtocart">
+                  </a> <!-- PDP_Addtocart -->
+                  <span class="method-name">PDP_Addtocart</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -206,6 +260,7 @@
       &lt;class name=&quot;com.testpackage.Homepage&quot;/&gt;
       &lt;class name=&quot;com.testpackage.PLPTestPage&quot;/&gt;
       &lt;class name=&quot;com.testpackage.Login&quot;/&gt;
+      &lt;class name=&quot;com.testpackage.PDPTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -219,7 +274,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (3 classes)</span>
+                <span class="test-name">Test (4 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -245,28 +300,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Registration')
-data.setCell(0, 2, 'com.testpackage.Login')
-data.setCell(0, 3, 22649);
+data.setCell(0, 1, 'PDP_Addtocart')
+data.setCell(0, 2, 'com.testpackage.PDPTest')
+data.setCell(0, 3, 95330);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'PLP')
-data.setCell(1, 2, 'com.testpackage.PLPTestPage')
-data.setCell(1, 3, 17166);
+data.setCell(1, 1, 'Registration')
+data.setCell(1, 2, 'com.testpackage.Login')
+data.setCell(1, 3, 65609);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'RegionTest')
-data.setCell(2, 2, 'com.testpackage.Homepage')
-data.setCell(2, 3, 14728);
+data.setCell(2, 1, 'PLP')
+data.setCell(2, 2, 'com.testpackage.PLPTestPage')
+data.setCell(2, 3, 31592);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'Login')
+data.setCell(3, 1, 'RegionTest')
 data.setCell(3, 2, 'com.testpackage.Homepage')
-data.setCell(3, 3, 6868);
+data.setCell(3, 3, 23517);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'Login')
+data.setCell(4, 2, 'com.testpackage.Homepage')
+data.setCell(4, 3, 21414);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -277,13 +336,6 @@ return data;
             <span class="header-content">Reporter output for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">Registration(Jyothi, Reddy, jyothi.reddy+2008apac@borngroup.com, Jyothi@12, Jyothi@12)</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Dashboard reported</span>
-                <span class="reporter-method-output">Dashboard reported</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
@@ -306,45 +358,62 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">RegionTest(diode)</span>
-                <span class="method-start">13110 ms</span>
+                <span class="method-start">46529 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Login(jyothi.reddy+2008@borngroup.com, Jyothi@12)</span>
-                <span class="method-start">28183 ms</span>
+                <span class="method-start">70259 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">35576 ms</span>
+                <span class="method-start">92110 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.testpackage.PLPTestPage</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
-                <span class="method-start">35943 ms</span>
+                <span class="method-start">92415 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">PLP</span>
-                <span class="method-start">46874 ms</span>
+                <span class="method-start">121302 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">64191 ms</span>
+                <span class="method-start">153009 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.testpackage.Login</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
-                <span class="method-start">64593 ms</span>
+                <span class="method-start">153308 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">Registration(Jyothi, Reddy, jyothi.reddy+2008apac@borngroup.com, Jyothi@12, Jyothi@12)</span>
-                <span class="method-start">82196 ms</span>
+                <span class="method-start">160286 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">105064 ms</span>
+                <span class="method-start">225901 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.testpackage.PDPTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">226157 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">PDP_Addtocart</span>
+                <span class="method-start">234467 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">329934 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

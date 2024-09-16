@@ -9,13 +9,37 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">105,346</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">330,206</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.testpackage.Homepage</td><td><a href="#m0">Login</a></td><td rowspan="1">1726051178207</td><td rowspan="1">6868</td></tr><tr class="passedeven"><td><a href="#m1">RegionTest</a></td><td rowspan="1">1726051163134</td><td rowspan="1">14728</td></tr><tr class="passedodd"><td rowspan="1">com.testpackage.Login</td><td><a href="#m2">Registration</a></td><td rowspan="1">1726051232220</td><td rowspan="1">22649</td></tr><tr class="passedeven"><td rowspan="1">com.testpackage.PLPTestPage</td><td><a href="#m3">PLP</a></td><td rowspan="1">1726051196898</td><td rowspan="1">17166</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.testpackage.Login</td><td><a href="#m0">Registration</a></td><td rowspan="1">1726471238727</td><td rowspan="1">65609</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.testpackage.Homepage</td><td><a href="#m1">Login</a></td><td rowspan="1">1726471148700</td><td rowspan="1">21414</td></tr><tr class="passedeven"><td><a href="#m2">RegionTest</a></td><td rowspan="1">1726471124970</td><td rowspan="1">23517</td></tr><tr class="passedodd"><td rowspan="1">com.testpackage.PDPTest</td><td><a href="#m3">PDP_Addtocart</a></td><td rowspan="1">1726471312908</td><td rowspan="1">95330</td></tr><tr class="passedeven"><td rowspan="1">com.testpackage.PLPTestPage</td><td><a href="#m4">PLP</a></td><td rowspan="1">1726471199743</td><td rowspan="1">31592</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">com.testpackage.Homepage#Login</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>jyothi.reddy+2008@borngroup.com</td><td>Jyothi@12</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.testpackage.Homepage#RegionTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>diode</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.testpackage.Login#Registration</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>Jyothi</td><td>Reddy</td><td>jyothi.reddy+2008apac@borngroup.com</td><td>Jyothi@12</td><td>Jyothi@12</td></tr><tr><th colspan="5">Messages</th></tr><tr><td colspan="5"><div class="messages">Dashboard reported<br/>Dashboard reported</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.testpackage.PLPTestPage#PLP</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">com.testpackage.Login#Registration</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>Jyothi</td><td>Reddy</td><td>jyothi.reddy+2008apac@borngroup.com</td><td>Jyothi@12</td><td>Jyothi@12</td></tr><tr><th colspan="5">Exception</th></tr><tr><td colspan="5"><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name=&apos;firstName&apos;]&quot;}
+  (Session info: chrome=128.0.6613.120)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [073ec3b583b512d66595e53dab1426b7, findElement {using=xpath, value=//input[@name=&apos;firstName&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 128.0.6613.120, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63531}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63531/devtoo..., se:cdpVersion: 128.0.6613.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 073ec3b583b512d66595e53dab1426b7
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at com.pages.Login_Page.registration(Login_Page.java:47)
+	at com.testpackage.Login.Registration(Login.java:20)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.testpackage.Homepage#Login</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>jyothi.reddy+2008@borngroup.com</td><td>Jyothi@12</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.testpackage.Homepage#RegionTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>diode</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.testpackage.PDPTest#PDP_Addtocart</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.testpackage.PLPTestPage#PLP</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
