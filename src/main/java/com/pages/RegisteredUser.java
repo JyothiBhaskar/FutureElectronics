@@ -21,11 +21,13 @@ public class RegisteredUser {
 	private By Password=By.xpath("//input[@id='j_password']");
 	private By logintext=By.xpath("//h2[contains(text(),'	Login')]");
 	private By submitbtn=By.xpath("//button[contains(text(),'	Login')]");
+	private By cookibot=By.xpath("//a[@id=\"CybotCookiebotDialogBodyButtonAccept\"]");
 	
 	public boolean Logintext()
 	{
 		HelperClass.sleepMethod(2);
 		HelperClass.Expilictwait(driver, loginmenu).click();
+		HelperClass.sleepMethod(2);
 		return HelperClass.Expilictwait(driver, logintext).isDisplayed();
 		
 	}
@@ -33,11 +35,11 @@ public class RegisteredUser {
 	
 	public void Login(String Uname,String Pword)
 	{
-		//Login_Page page=new Login_Page(driver);
-		//page.cookiebot();
 	
 	HelperClass.Expilictwait(driver, Username).sendKeys(Uname);
 	HelperClass.Expilictwait(driver, Password).sendKeys(Pword);
+	HelperClass.sleepMethod(2);
+
 	HelperClass.Expilictwait(driver, submitbtn).click();
 }
 	

@@ -18,7 +18,7 @@ public class Homepage extends BaseClass {
 	{
 		HomeTest test=new HomeTest(driver);
 		Assert.assertTrue(test.FELogodispaly());
-		test.RegionDropdow(ConfigClass.getproperties("region"));
+		//test.RegionDropdow(ConfigClass.getproperties("region"));
 		test.LangDropdown();
 		test.search(search);
 		Assert.assertTrue(test.searchvalid());
@@ -33,6 +33,8 @@ public class Homepage extends BaseClass {
 		user.Login(Uname, Pwd);
 		
 	}
+	
+	
 	
 	}
 
